@@ -12,6 +12,24 @@
         font-size: 36px;
         text-align:center;
     }
+    &_img{
+        
+        opacity: 0.5;
+        &--g{
+            height: 55px;
+            width: 55px;
+            padding-left:8%;
+            padding-top: 28%;
+            position: absolute;
+        }
+        &--d{
+            height: 55px;
+            width: 55px;
+            padding-left:82%;
+            padding-top: 27%;
+            position: absolute;
+        }
+    }
     &_projets{
         display: grid;
         grid-template-columns: 2;
@@ -22,7 +40,7 @@
         &--p1,&--p2,&--p3,&--p4{
          height: 250px;
         width: 400px;
-        padding: 6%;
+        padding: 8%;
         padding-bottom: 15%;
         }
 

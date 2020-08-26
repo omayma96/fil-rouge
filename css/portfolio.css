@@ -83,6 +83,20 @@ body {
     font-family: 'poppins';
     font-size: 36px;
     text-align: center; }
+  .portfolio_text_img {
+    opacity: 0.5; }
+    .portfolio_text_img--g {
+      height: 55px;
+      width: 55px;
+      padding-left: 8%;
+      padding-top: 28%;
+      position: absolute; }
+    .portfolio_text_img--d {
+      height: 55px;
+      width: 55px;
+      padding-left: 82%;
+      padding-top: 27%;
+      position: absolute; }
   .portfolio_text_projets {
     display: grid;
     grid-template-columns: 2;
@@ -92,7 +106,7 @@ body {
     .portfolio_text_projets--p1, .portfolio_text_projets--p2, .portfolio_text_projets--p3, .portfolio_text_projets--p4 {
       height: 250px;
       width: 400px;
-      padding: 6%;
+      padding: 8%;
       padding-bottom: 15%; }
     .portfolio_text_projets--p1 {
       grid-row: 1;
