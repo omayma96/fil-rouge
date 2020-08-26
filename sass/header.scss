@@ -1,5 +1,25 @@
 body{
     margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.background{
+    /* définir les sizes de l'mage de backgroud */
+     img{
+   width: 95.4%;
+   height: 100%;
+   position: absolute;
+
+     }
+    // pour faire du décalage entre le navbar et image background
+   margin-left: 4.6%;
+
+    // centrer l'image du background et jouer sur l'opacité
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+
 }
 .nav{
     list-style-type: none;
@@ -12,8 +32,7 @@ body{
     background-color: black;
     &_item{
         display: block;
-        padding: 20% 16px;
-        
+        padding: 19% 16px; 
       
         &--img{
            
