@@ -38,11 +38,19 @@ body {
   left: 45%;
   transform: translate(-50%, -50%);
   color: white; }
+  .hero_text_img {
+    padding-left: 95%;
+    padding-top: -15%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    opacity: 0.5; }
   .hero_text_title {
     padding-top: 35%;
     font-family: 'poppins';
     font-size: 36px;
-    line-height: 1.8; }
+    line-height: 1.8;
+    padding-bottom: 10%; }
     .hero_text_title--name {
       color: #F50996; }
   .hero_text_button {
@@ -52,9 +60,9 @@ body {
     color: #39EA00;
     font-family: 'poppins';
     font-size: 24px;
-    margin-top: 10%;
     padding: 3% 6%;
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none; }
   .hero_text_reseaux {
     margin-left: -10%;
     padding-top: 4%; }
