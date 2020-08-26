@@ -9,13 +9,13 @@ body {
   background-size: cover;
   position: relative;
   margin-left: 5%;
-  opacity: 0.9; }
+  opacity: 0.98; }
 
 .navbar .nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-top: 15%;
+  padding-top: 14%;
   width: 5%;
   background-color: black;
   position: fixed;
@@ -23,7 +23,7 @@ body {
   overflow: auto; }
   .navbar .nav_item {
     display: block;
-    padding: 8px 20px;
+    padding: 15% 20px;
     text-decoration: none; }
     .navbar .nav_item--img {
       height: 45px;
@@ -39,9 +39,27 @@ body {
   transform: translate(-50%, -50%);
   color: white; }
   .hero_text_title {
-    padding-top: 20%;
+    padding-top: 35%;
     font-family: 'poppins';
     font-size: 36px;
     line-height: 1.8; }
     .hero_text_title--name {
       color: #F50996; }
+  .hero_text_button {
+    background: none;
+    border: 2px solid #39EA00;
+    border-radius: 5px;
+    color: #39EA00;
+    font-family: 'poppins';
+    font-size: 24px;
+    margin-top: 10%;
+    padding: 3% 6%;
+    font-weight: bold; }
+  .hero_text_reseaux {
+    margin-left: -10%;
+    padding-top: 4%; }
+  .hero_text_reseaux--icon {
+    width: 24px;
+    height: 24px;
+    padding-left: 1.5%;
+    text-align: center; }
