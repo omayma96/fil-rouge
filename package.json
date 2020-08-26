@@ -4,13 +4,22 @@
   "description": "mon portfolio",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "postcss-cli": "^7.1.1"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "autoprefixer": "^9.8.6",
+    "concat": "^1.0.3",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node-sass -w sass -o css",
+    "compile": "node-sass sass -o css",
+    "concat": "concat -o css/concat.css css/header.css css/footer.css",
+    "prefix": "postcss css/concat.css --use autoprefixer --map=false  --output=css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "compress-js": "uglifyjs js/script.js -o js/main.js",
+    "build": "npm-run-all watch compile prefix compress"
   },
   "repository": {
     "type": "git",
