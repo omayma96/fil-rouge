@@ -89,6 +89,13 @@ body {
       font-family: 'poppins';
       font-size: 36px;
       text-align: center; }
+    .contact_image .contact_text_para {
+      color: #39EA00;
+      text-transform: uppercase;
+      font-family: 'poppins';
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center; }
 
 .contact_text_info {
   width: 80%;
@@ -99,19 +106,19 @@ body {
     .contact_text_info .input-fields input[type=text], .contact_text_info .input-fields [type=email], .contact_text_info .input-fields [type=number] {
       width: 100%;
       border-radius: 5px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      padding: 10px;
-      margin-bottom: 15px;
-      font-size: 18px; }
-    .contact_text_info .input-fields .message textarea {
-      width: 100%;
-      border-radius: 5px;
-      border: 1px solid #ccc;
       box-sizing: border-box;
       padding: 10px;
       margin-bottom: 15px;
       font-size: 18px;
+      background-color: #3C3C3C; }
+    .contact_text_info .input-fields .message textarea {
+      width: 100%;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      background-color: #3C3C3C;
       height: 200px;
       font-family: 'Poppins', sans-serif; }
     .contact_text_info .input-fields .contact-button {
@@ -126,7 +133,7 @@ body {
       cursor: pointer;
       margin-bottom: 60px; }
     .contact_text_info .input-fields .contact-button:hover {
-      background-color: #658da7; }
+      background-color: #f50996; }
 
 .container {
   display: grid;

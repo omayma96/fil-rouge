@@ -3,11 +3,12 @@
 @mixin forminputs {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+  
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 15px;
     font-size: 18px;
+    background-color: #3C3C3C;
 }
 
 .contact_image{
@@ -27,6 +28,15 @@
         font-family: 'poppins';
         font-size: 36px;
         text-align:center;
+    }
+    &_para{
+        color:#39EA00;
+        text-transform : uppercase;
+        font-family: 'poppins';
+        font-size: 24px;
+        font-weight:bold;
+        text-align: center;
+
     }
 }
 
@@ -62,7 +72,7 @@
                 margin-bottom: 60px;
         }
         .contact-button:hover {
-            background-color: rgba($color: #658DA7, $alpha: 1.0);
+            background-color: rgba($color: #F50996, $alpha: 1.0);
         }
     }
 }
