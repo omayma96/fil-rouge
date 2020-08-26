@@ -1,0 +1,15 @@
+@import 'header.scss';
+
+.portfolio_text{
+    margin-left: 5%;
+    padding:1px 16px;
+    min-height:870px;
+    background-color: black;
+    opacity: 0.86;
+    &_title{
+        color:#F50996;
+        font-family: 'poppins';
+        font-size: 36px;
+        text-align:center;
+    }
+}
