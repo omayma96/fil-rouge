@@ -11,6 +11,7 @@
             <!-- Début pages css -->
             <link rel="stylesheet" href="css/header.css">
             <link rel="stylesheet" href="css/footer.css">
+            <link rel="stylesheet" href="css/contact.css">
     
     
     
@@ -24,6 +25,55 @@
         <title>Omayma Hajjami</title>
     </head>
 <body>
+
+      <!--Navbar desktop-->
+      <div class="navbar">
+        <ul class="nav">
+            <li><a class="nav_item" href="index.html"><img class="nav_item--img" src="maquette/Asset/logo/icons8-niche-pour-chien-50.png" alt="accueil" ></a></li>
+            <li><a class="nav_item" href="propos.html"><img class="nav_item--img" src="maquette/Asset/logo/icons8-compétences-de-développement-30.png" alt="compétences"></a></li>
+            <li><a class="nav_item" href="portfolio.html"><img class="nav_item--img" src="maquette/Asset/logo/icons8-visible-60.png" alt="portfolio"></a></li>
+            <li><a class="nav_item" href="contact.html"><img class="nav_item--img" src="maquette/Asset/logo/icons8-contact-d'affaires-50.png" alt="contact"></a></li>
+            <li><a class="nav_item" href="login.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-personne-femme-50.png" alt="login"></a></li>
+        </ul>
+    </div>
+    <!--Fin Navbar desktop -->
+
+       <!-- Début du text-->
+       <div class="contact_image">
+
+        <div class="contact_text">
+          
+           <h2 class="contact_text_title">Contact</h2>
+           
+           
+           <!-- <a href="propos.html"><img class="contact_text_img" src="maquette/Asset/logo/forwardarrow_haciaadelante_4836.png"></a> -->
+           <div class="container">
+
+           <div class="contact_text_info">
+            <form class="input-fields" method="post" action="contact-form-handler.php">
+                <div class="name"><input type="text" name="name" placeholder="Votre nom" required/></div>
+                <div class="number"><input type="number" name="phone" placeholder="Numéro de téléphone" required/></div>
+                <div class="email"><input type="email" name="email" placeholder="Address email" required/></div>
+                <div class="message"><textarea name="message" placeholder="Votre message" required></textarea></div>
+                <div class="submit"><input type="submit" class="contact-button" value="ENVOYER VOTRE MESSAGE" required/> </div>
+            </form>
+        
+           <ul>
+               <il><a  class="contact_text_reseaux--icon" href="https://www.facebook.com/omaymahajjami1"><img class="contact_text_reseaux--icon" src="maquette/Asset/logo/icons8-facebook-48.png"></a></il>
+               <il><a  class="contact_text_reseaux--icon" href="https://www.instagram.com/omaymahajjami/"><img class="contact_text_reseaux--icon" src="maquette/Asset/logo/icons8-instagram-24.png"></a></il>
+               <il><a  class="contact_text_reseaux--icon" href="https://www.linkedin.com/in/omayma-hajjami-a57a8217a/"><img class="contact_text_reseaux--icon" src="maquette/Asset/logo/icons8-linkedin-24.png"></a></il>
+               <il><a  class="contact_text_reseaux--icon" href="https://github.com/omayma96"><img class="contact_text_reseaux--icon" src="maquette/Asset/logo/icons8-github-2-24.png"></a></il>
+               <il><a  class="contact_text_reseaux--icon" href="https://twitter.com/HajjamiOmayma"><img class="contact_text_reseaux--icon" src="maquette/Asset/logo/icons8-twitter-24.png"></a></il>
+           </ul>
+
+       </div>
+       
+       <div class="contact_text_map">
+           <img src="img/maps.PNG">
+       </div>
+
+   </div>
+   <!--Fin du text -->
     
 </body>
 </html>
