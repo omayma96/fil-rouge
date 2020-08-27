@@ -91,6 +91,44 @@ body {
         height: 19px;
         padding-left: 0.8%; } }
 
+@media only screen and (max-width: 768px) {
+  #burger {
+    z-index: 6;
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    background: linear-gradient(75deg, #000000 10%, #F50996);
+    font-size: 32px;
+    padding: 20px 16px 32px 32px;
+    border-radius: 0% 0% 0% 100%;
+    transition: 1s;
+    cursor: pointer; }
+  #quit {
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+    display: none;
+    cursor: pointer; }
+  #links a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto';
+    z-index: 10; } }
+
+#links {
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+  padding: 0;
+  justify-content: space-around; }
+
 .propos_image {
   background-image: url(../img/107.png);
   height: 869px;
