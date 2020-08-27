@@ -47,22 +47,24 @@ body {
     opacity: 0.5; }
   .hero_text_title {
     padding-top: 35%;
-    font-family: 'poppins';
-    font-size: 36px;
     line-height: 1.8;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    color: white;
+    font-family: "poppins";
+    font-size: 36px;
+    font-weight: bold; }
     .hero_text_title--name {
       color: #F50996; }
   .hero_text_button {
     background: none;
     border: 2px solid #39EA00;
     border-radius: 5px;
-    color: #39EA00;
-    font-family: 'poppins';
-    font-size: 24px;
     padding: 3% 6%;
-    font-weight: bold;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #39EA00;
+    font-family: "poppins";
+    font-size: 24px;
+    font-weight: bold; }
   .hero_text_reseaux {
     margin-left: -10%;
     padding-top: 4%; }
@@ -85,8 +87,9 @@ body {
     margin-left: 5%;
     padding: 1px 16px; }
     .propos_image .propos_title--t {
-      color: #F50996;
-      font-family: 'poppins';
-      font-size: 36px;
       text-align: center;
+      color: #F50996;
+      font-family: "poppins";
+      font-size: 36px;
+      font-weight: bold;
       text-transform: uppercase; }

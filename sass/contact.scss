@@ -13,28 +13,21 @@
 
 .contact_image{
     background-image: url(../img/contact.jpg); 
-    height: 869px;
-    background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-    position: relative;
-    margin-left:5%;
-    opacity:0.98;
+    @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
+
   .contact_text{
     margin-left: 5%;
     padding:1px 16px;
     &_title{
-        color:#F50996;
-        font-family: 'poppins';
-        font-size: 36px;
         text-align:center;
+        @include font (#F50996, 'poppins', 36px, bold);
+
     }
     &_para{
-        color:#39EA00;
+        
         text-transform : uppercase;
-        font-family: 'poppins';
-        font-size: 24px;
-        font-weight:bold;
+        @include font (#39EA00, 'poppins', 24px, bold);
+
         text-align: center;
 
     }
@@ -61,12 +54,12 @@
         }
         .contact-button {
                 background-color: rgba($color:#F50996 , $alpha: 0.8);
-                color: white;
                 border: none;
                 width: 100%;
                 height: 40px;
-                font-size: 15px;
-                font-weight: bold;
+                @include font (white, 'poppins', 15px, bold);
+
+
                 border-radius: 5px;
                 cursor: pointer;
                 margin-bottom: 60px;

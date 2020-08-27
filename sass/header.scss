@@ -4,16 +4,28 @@ body{
   
     
 }
+@mixin img ($h, $bg_p, $bg_re, $bg_size, $p, $m_left, $op){
+    height: $h;
+    background-position: $bg_p;
+    background-repeat: $bg_re;
+    background-size: $bg_size;
+    position: $p;
+    margin-left: $m_left;
+    opacity: $op;
+
+}
+@mixin font ($col, $fm, $fs, $fw){
+        color: $col;
+        font-family: $fm;
+        font-size: $fs;
+        font-weight: $fw;
+
+}
+
 .hero_image{
     background-image: url(../img/background.png);
+    @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
     
-    height: 869px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-left:5%;
-  opacity:0.98;
 
 }
 
@@ -64,10 +76,9 @@ body{
     }
     &_title{
         padding-top: 35%;
-        font-family: 'poppins';
-        font-size: 36px;
         line-height: 1.8;
         padding-bottom: 10%;
+        @include font (white, 'poppins', 36px, bold);
         &--name{
             color:#F50996;
         }
@@ -77,12 +88,10 @@ body{
         background:none;
         border: 2px solid #39EA00;
         border-radius: 5px;
-        color: #39EA00;
-        font-family: 'poppins';
-        font-size: 24px;
         padding: 3% 6%;
-        font-weight: bold;
         text-decoration: none;
+        @include font (#39EA00, 'poppins', 24px, bold);
+
     }
     &_reseaux{
         margin-left: -10%;

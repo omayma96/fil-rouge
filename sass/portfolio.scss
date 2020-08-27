@@ -1,5 +1,12 @@
 @import 'header.scss';
 
+@mixin pos($ht,$w,$pl,$pt,$p){
+    height: $ht;
+    width: $w;
+    padding-left:$pl;
+    padding-top: $pt;
+    position: $p;
+}
 .portfolio_text{
     margin-left: 5%;
     padding:1px 16px;
@@ -7,27 +14,20 @@
     background-color: black;
     opacity: 0.86;
     &_title{
-        color:#F50996;
-        font-family: 'poppins';
-        font-size: 36px;
+
         text-align:center;
+        @include font (#F50996, 'poppins', 36px, bold);
+
     }
     &_img{
         
         opacity: 0.5;
         &--g{
-            height: 55px;
-            width: 55px;
-            padding-left:8%;
-            padding-top: 28%;
-            position: absolute;
+            @include pos(55px,55px,8%,28%, absolute);
         }
         &--d{
-            height: 55px;
-            width: 55px;
-            padding-left:82%;
-            padding-top: 27%;
-            position: absolute;
+            @include pos(55px,55px,82%,27%, absolute);
+
         }
     }
     &_projets{

@@ -8,17 +8,11 @@
     &_name{
         padding-top:3%;
         padding-left:3%;
-        color:white;
-        font-family: 'poppins';
-        font-size: 28px;
-        font-weight: bold;
+        @include font (white, 'poppins', 28px, bold);
         
     }
     &_discription{
-        color:#707070;
-        font-size:19px;
-        font-weight: 400;
-        font-family: 'poppins';
+        @include font (#707070, 'poppins', 19px, 400);
         padding-left:7%;
 
     }
@@ -55,16 +49,14 @@
         &--title{
             padding-top:4%;
             padding-left:3%;
-            color:white;
-            font-family: 'poppins';
-            font-size: 28px;
-            font-weight: bold;
+            @include font (white, 'poppins', 28px, bold);
+
+            
         }
         &--para,&--list{
-            color:#707070;
-            font-size:19px;
-            font-weight: 400;
-            font-family: 'poppins';
+ 
+            @include font (#707070, 'poppins', 19px, 400);
+
             padding-left:7%;
             padding-right: 7%;
         }

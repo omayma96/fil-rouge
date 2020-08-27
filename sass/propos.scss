@@ -2,21 +2,16 @@
 
 .propos_image{
     background-image: url(../img/107.png); 
-    height: 869px;
-    background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-    position: relative;
-    margin-left:5%;
-    opacity:0.98;
+    @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
+
   .propos_title{
     margin-left: 5%;
     padding:1px 16px;
     &--t{
-        color:#F50996;
-        font-family: 'poppins';
-        font-size: 36px;
+   
         text-align:center;
+        @include font (#F50996, 'poppins', 36px, bold);
+
         text-transform: uppercase;
     }
   }
