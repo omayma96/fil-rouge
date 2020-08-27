@@ -14,6 +14,11 @@
 .contact_image{
     background-image: url(../img/contact.jpg); 
     @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
+    @media only screen and (max-width: 768px){
+        margin-left: 0%;
+        height: 100%;
+    }
+    
 
   .contact_text{
     margin-left: 5%;
@@ -21,12 +26,19 @@
     &_title{
         text-align:center;
         @include font (#F50996, 'poppins', 36px, bold);
+        @media only screen and (max-width: 768px){
+            font-size: 26px;
+        }
 
     }
     &_para{
         
         text-transform : uppercase;
         @include font (#39EA00, 'poppins', 24px, bold);
+        @media only screen and (max-width: 768px){
+            font-size: 18px;
+            padding-left:-5%;
+        }
 
         text-align: center;
 
@@ -39,6 +51,9 @@
     //margin: auto;
     padding-top: 60px;
     padding-left: 15%;
+    @media only screen and (max-width: 768px){
+        padding-left:  7%;
+    }
     .input-fields {
         display: grid;
         input[type=text], [type=email], [type=number] {
@@ -74,27 +89,54 @@
     grid-template-rows: 1;
     grid-template-columns: 2;
     width: 100%;
+    @media only screen and (max-width: 768px){
+        grid-template-rows: 2;
+        grid-template-columns: 1;
+    }
     
     .contact_text_info, .contact_text_reseaux{
         grid-row: 1;
         grid-column: 1;
+        @media only screen and (max-width: 768px){
+            grid-row: 1;
+            grid-column: 1;
+        }
     }
     .contact_text_map{
         grid-row: 1;
         grid-column: 2;
+        @media only screen and (max-width: 768px){
+            grid-row: 2;
+            grid-column: 1;
+
+        }
         img{
             padding-top:6%;
             padding-left:15%;
             width: 600px;
             height: 600px;
+            @media only screen and (max-width: 768px){
+                width: 80%;
+                height: 80%;
+                padding-left:5%;
+            }
         }
 
     }
     .contact_text_reseaux--icon{
         padding-left: 3%;
+        @media only screen and (max-width: 768px){
+            padding-left: 1.5%;
+        }
+
         img{
             widows: 35px;
             height: 35px;
+            @media only screen and (max-width: 768px){
+                
+                widows: 25px;
+                height: 25px;
+            }
         }
     }
     

@@ -100,6 +100,10 @@ body {
   position: relative;
   margin-left: 5%;
   opacity: 0.98; }
+  @media only screen and (max-width: 768px) {
+    .contact_image {
+      margin-left: 0%;
+      height: 100%; } }
   .contact_image .contact_text {
     margin-left: 5%;
     padding: 1px 16px; }
@@ -109,6 +113,9 @@ body {
       font-family: "poppins";
       font-size: 36px;
       font-weight: bold; }
+      @media only screen and (max-width: 768px) {
+        .contact_image .contact_text_title {
+          font-size: 26px; } }
     .contact_image .contact_text_para {
       text-transform: uppercase;
       color: #39EA00;
@@ -116,11 +123,18 @@ body {
       font-size: 24px;
       font-weight: bold;
       text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .contact_image .contact_text_para {
+          font-size: 18px;
+          padding-left: -5%; } }
 
 .contact_text_info {
   width: 80%;
   padding-top: 60px;
   padding-left: 15%; }
+  @media only screen and (max-width: 768px) {
+    .contact_text_info {
+      padding-left: 7%; } }
   .contact_text_info .input-fields {
     display: grid; }
     .contact_text_info .input-fields input[type=text], .contact_text_info .input-fields [type=email], .contact_text_info .input-fields [type=number] {
@@ -161,19 +175,43 @@ body {
   grid-template-rows: 1;
   grid-template-columns: 2;
   width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-rows: 2;
+      grid-template-columns: 1; } }
   .container .contact_text_info, .container .contact_text_reseaux {
     grid-row: 1;
     grid-column: 1; }
+    @media only screen and (max-width: 768px) {
+      .container .contact_text_info, .container .contact_text_reseaux {
+        grid-row: 1;
+        grid-column: 1; } }
   .container .contact_text_map {
     grid-row: 1;
     grid-column: 2; }
+    @media only screen and (max-width: 768px) {
+      .container .contact_text_map {
+        grid-row: 2;
+        grid-column: 1; } }
     .container .contact_text_map img {
       padding-top: 6%;
       padding-left: 15%;
       width: 600px;
       height: 600px; }
+      @media only screen and (max-width: 768px) {
+        .container .contact_text_map img {
+          width: 80%;
+          height: 80%;
+          padding-left: 5%; } }
   .container .contact_text_reseaux--icon {
     padding-left: 3%; }
+    @media only screen and (max-width: 768px) {
+      .container .contact_text_reseaux--icon {
+        padding-left: 1.5%; } }
     .container .contact_text_reseaux--icon img {
       widows: 35px;
       height: 35px; }
+      @media only screen and (max-width: 768px) {
+        .container .contact_text_reseaux--icon img {
+          widows: 25px;
+          height: 25px; } }
