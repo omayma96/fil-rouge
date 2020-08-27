@@ -25,12 +25,18 @@ body{
 .hero_image{
     background-image: url(../img/background.png);
     @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
+    @media only screen and (max-width: 768px){
+        margin-left: 0%;
+    }
     
-
 }
 
 .navbar{
     .nav{
+        @media only screen and (max-width: 768px) {
+            display:none;
+        }
+
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -63,27 +69,24 @@ body{
     left: 45%;
     transform: translate(-50%, -50%);
     color: white;
-    &_img{
-        
-        padding-left:95%;
-         padding-top: -15%;
-        height: 55px;
-        width: 55px;
-        position: absolute;
-        opacity: 0.5;
-
-
-    }
+ 
     &_title{
         padding-top: 35%;
         line-height: 1.8;
         padding-bottom: 10%;
         @include font (white, 'poppins', 36px, bold);
+        @media only screen and (max-width: 768px){
+            font-size: 24px;
+
+        }
         &--name{
             color:#F50996;
+            @media only screen and (max-width: 768px){
+                font-size: 24px;
         }
  
     }
+}
     &_button{
         background:none;
         border: 2px solid #39EA00;
@@ -91,16 +94,28 @@ body{
         padding: 3% 6%;
         text-decoration: none;
         @include font (#39EA00, 'poppins', 24px, bold);
+        @media only screen and (max-width: 768px){
+            font-size: 20px;
+            padding: 2% 4%;
+        }
 
     }
     &_reseaux{
         margin-left: -10%;
         padding-top: 4%;
+        @media only screen and (max-width: 768px){
+            margin-left: -15%;
+        }
     }
     &_reseaux--icon{
         width: 24px;
         height: 24px;
         padding-left: 1.5%;
         text-align: center;
+        @media only screen and (max-width: 768px){
+            width: 19px;
+            height: 19px;
+            padding-left: 0.8%;
+        }
     }
 }
