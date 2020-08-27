@@ -1,0 +1,72 @@
+@import 'header.scss';
+.projet{
+    margin-left: 5%;
+    padding:1px 16px;
+    min-height:870px;
+    background-color: black;
+    opacity: 0.86;
+    &_name{
+        padding-top:6%;
+        padding-left:3%;
+        color:white;
+        font-family: 'poppins';
+        font-size: 28px;
+        font-weight: bold;
+        
+    }
+    &_discription{
+        color:#707070;
+        font-size:19px;
+        font-weight: 400;
+        font-family: 'poppins';
+        padding-left:7%;
+
+    }
+    &_button{
+        padding: 1% 3%;
+        margin-left: 11%;
+        margin-top:2%;
+        a{
+            text-decoration: none;
+            font-size:18px;
+            color:black;
+        }
+    }
+    &_reseaux{
+        margin-left:70%;
+        margin-top: -5%;
+        img{
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &_img{
+        img{
+            margin-left:17%;
+            padding-top:4%;
+            width: 60%;
+            height: 30%;
+        }
+    }
+    &_partie1,&_partie2,&_partie3{
+        margin-left:3%;
+        color:#707070;
+
+        &--title{
+            padding-top:4%;
+            padding-left:3%;
+            color:white;
+            font-family: 'poppins';
+            font-size: 28px;
+            font-weight: bold;
+        }
+        &--para,&--list{
+            color:#707070;
+            font-size:19px;
+            font-weight: 400;
+            font-family: 'poppins';
+            padding-left:7%;
+            padding-right: 7%;
+        }
+    }
+}
