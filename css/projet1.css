@@ -97,6 +97,9 @@ body {
   min-height: 870px;
   background-color: black;
   opacity: 0.86; }
+  @media only screen and (max-width: 768px) {
+    .projet {
+      margin-left: 0%; } }
   .projet_name {
     padding-top: 3%;
     padding-left: 3%;
@@ -114,6 +117,9 @@ body {
     padding: 1% 3%;
     margin-left: 11%;
     margin-top: 2%; }
+    @media only screen and (max-width: 768px) {
+      .projet_button {
+        width: 80%; } }
     .projet_button a {
       text-decoration: none;
       font-size: 18px;
@@ -121,14 +127,27 @@ body {
   .projet_reseaux {
     margin-left: 70%;
     margin-top: -5%; }
+    @media only screen and (max-width: 768px) {
+      .projet_reseaux {
+        margin-left: 10%;
+        margin-top: 10%; } }
     .projet_reseaux img {
       width: 65px;
       height: 65px; }
+      @media only screen and (max-width: 768px) {
+        .projet_reseaux img {
+          width: 47px;
+          height: 47px; } }
   .projet_img img {
     margin-left: 17%;
     padding-top: 4%;
     width: 60%;
     height: 30%; }
+    @media only screen and (max-width: 768px) {
+      .projet_img img {
+        width: 80%;
+        height: 50%;
+        margin-left: 10%; } }
   .projet_partie1, .projet_partie2, .projet_partie3 {
     margin-left: 3%;
     color: #707070; }
@@ -139,6 +158,9 @@ body {
       font-family: "poppins";
       font-size: 28px;
       font-weight: bold; }
+      @media only screen and (max-width: 768px) {
+        .projet_partie1--title, .projet_partie2--title, .projet_partie3--title {
+          font-size: 22px; } }
     .projet_partie1--para, .projet_partie1--list, .projet_partie2--para, .projet_partie2--list, .projet_partie3--para, .projet_partie3--list {
       color: #707070;
       font-family: "poppins";
@@ -146,3 +168,6 @@ body {
       font-weight: 400;
       padding-left: 7%;
       padding-right: 7%; }
+      @media only screen and (max-width: 768px) {
+        .projet_partie1--para, .projet_partie1--list, .projet_partie2--para, .projet_partie2--list, .projet_partie3--para, .projet_partie3--list {
+          font-size: 15px; } }
