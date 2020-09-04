@@ -158,7 +158,8 @@ body {
   .aboutMe_button1 {
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 3; }
+    grid-template-columns: 3;
+    display: none; }
     .aboutMe_button1--prq {
       grid-row: 1;
       grid-column: 1;
@@ -211,8 +212,7 @@ body {
   .aboutMe_button3 {
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 3;
-    display: none; }
+    grid-template-columns: 3; }
     .aboutMe_button3--prq {
       grid-row: 1;
       grid-column: 1;
@@ -238,7 +238,8 @@ body {
   .aboutMe_info {
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 2; }
+    grid-template-columns: 2;
+    display: none; }
     .aboutMe_info--img {
       grid-row: 1;
       grid-column: 1; }
@@ -254,3 +255,34 @@ body {
       font-family: 'poppins';
       font-weight: 400;
       padding: 15% 15%; }
+  .aboutMe_service {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 4;
+    display: none; }
+    .aboutMe_service img {
+      width: 27%;
+      height: 27%;
+      padding: 19% 36% 5%; }
+    .aboutMe_service h4 {
+      color: #39EA00;
+      text-align: center;
+      font-family: 'poppins'; }
+    .aboutMe_service p {
+      text-align: center;
+      color: white;
+      font-family: 'poppins';
+      font-size: 14px;
+      padding: 5% 10%; }
+    .aboutMe_service--vite {
+      grid-row: 1;
+      grid-column: 1; }
+    .aboutMe_service--Intui {
+      grid-row: 1;
+      grid-column: 2; }
+    .aboutMe_service--Dynam {
+      grid-row: 1;
+      grid-column: 3; }
+    .aboutMe_service--Resp {
+      grid-row: 1;
+      grid-column: 4; }

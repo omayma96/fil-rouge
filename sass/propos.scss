@@ -38,6 +38,7 @@
     display:grid;
     grid-template-rows: 1;
     grid-template-columns: 3;
+    display:none;
 
     &--prq{
       grid-row: 1;
@@ -117,7 +118,7 @@
     display:grid;
     grid-template-rows: 1;
     grid-template-columns: 3;
-    display:none;
+    //display:none;
 
     &--prq{
       grid-row: 1;
@@ -155,6 +156,7 @@
   display: grid;
   grid-template-rows: 1;
   grid-template-columns: 2;
+  display:none;
 
   &--img{
     grid-row: 1;
@@ -175,6 +177,48 @@
     font-weight: 400;
     padding: 15% 15%;
   }
+}
+&_service{
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 4;
+  display: none;
+  img{
+    width: 27%;
+    height: 27%;
+    padding: 19% 36% 5%;
+  }
+  h4{
+    color: #39EA00;
+    text-align:center;
+    font-family:'poppins';
+
+  }
+  p{
+    text-align: center;
+    color:white;
+    font-family: 'poppins';
+    font-size:14px;
+    padding: 5% 10%;
+
+  }
+  &--vite{
+    grid-row: 1;
+    grid-column: 1;
+  }
+  &--Intui{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  &--Dynam{
+    grid-row: 1;
+    grid-column: 3;
+  }
+  &--Resp{
+    grid-row: 1;
+    grid-column: 4;
+  }
+
 }
  
 }
