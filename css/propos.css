@@ -130,16 +130,14 @@ body {
   justify-content: space-around; }
 
 .propos_image {
-  background-image: url(../img/107.png);
-  height: 869px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
   margin-left: 5%;
-  opacity: 0.98; }
+  padding: 1px 16px;
+  min-height: 870px;
+  background-color: black;
+  opacity: 0.86;
+  z-index: 1; }
   .propos_image .propos_title {
-    margin-left: 5%;
+    margin-left: 1%;
     padding: 1px 16px; }
     .propos_image .propos_title--t {
       text-align: center;
@@ -148,3 +146,111 @@ body {
       font-size: 36px;
       font-weight: bold;
       text-transform: uppercase; }
+
+.aboutMe {
+  width: 70%;
+  height: 60%;
+  background: black;
+  opacity: 0.50;
+  z-index: 2;
+  position: absolute;
+  margin: -40% 25% 7% 17%; }
+  .aboutMe_button1 {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 3; }
+    .aboutMe_button1--prq {
+      grid-row: 1;
+      grid-column: 1;
+      background: #F50996; }
+    .aboutMe_button1--ser {
+      grid-row: 1;
+      grid-column: 2;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button1--compt {
+      grid-row: 1;
+      grid-column: 3;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button1--prq, .aboutMe_button1--ser, .aboutMe_button1--compt {
+      color: white;
+      font-weight: bold;
+      font-family: 'poppins';
+      font-size: 20px;
+      text-align: center;
+      padding: 2% 3%;
+      border: 1px solid black; }
+  .aboutMe_button2 {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 3;
+    display: none; }
+    .aboutMe_button2--prq {
+      grid-row: 1;
+      grid-column: 1;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button2--ser {
+      grid-row: 1;
+      grid-column: 2;
+      background: #F50996; }
+    .aboutMe_button2--compt {
+      grid-row: 1;
+      grid-column: 3;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button2--prq, .aboutMe_button2--ser, .aboutMe_button2--compt {
+      color: white;
+      font-weight: bold;
+      font-family: 'poppins';
+      font-size: 20px;
+      text-align: center;
+      padding: 2% 3%;
+      border: 1px solid black; }
+  .aboutMe_button3 {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 3;
+    display: none; }
+    .aboutMe_button3--prq {
+      grid-row: 1;
+      grid-column: 1;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button3--ser {
+      grid-row: 1;
+      grid-column: 2;
+      background: #39EA00;
+      opacity: 0.7; }
+    .aboutMe_button3--compt {
+      grid-row: 1;
+      grid-column: 3;
+      background: #F50996; }
+    .aboutMe_button3--prq, .aboutMe_button3--ser, .aboutMe_button3--compt {
+      color: white;
+      font-weight: bold;
+      font-family: 'poppins';
+      font-size: 20px;
+      text-align: center;
+      padding: 2% 3%;
+      border: 1px solid black; }
+  .aboutMe_info {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2; }
+    .aboutMe_info--img {
+      grid-row: 1;
+      grid-column: 1; }
+      .aboutMe_info--img img {
+        height: 55%;
+        width: 55%;
+        padding: 5% 25%; }
+    .aboutMe_info--para {
+      grid-row: 1;
+      grid-column: 2;
+      color: white;
+      text-align: center;
+      font-family: 'poppins';
+      font-weight: 400;
+      padding: 15% 15%; }
