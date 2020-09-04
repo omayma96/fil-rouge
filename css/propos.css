@@ -135,6 +135,7 @@ body {
   min-height: 870px;
   background-color: black;
   opacity: 0.86;
+  position: relative;
   z-index: 1; }
   .propos_image .propos_title {
     margin-left: 1%;
@@ -149,7 +150,7 @@ body {
 
 .aboutMe {
   width: 70%;
-  height: 60%;
+  height: 70%;
   background: black;
   opacity: 0.50;
   z-index: 2;
@@ -158,8 +159,7 @@ body {
   .aboutMe_button1 {
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 3;
-    display: none; }
+    grid-template-columns: 3; }
     .aboutMe_button1--prq {
       grid-row: 1;
       grid-column: 1;
@@ -212,7 +212,8 @@ body {
   .aboutMe_button3 {
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 3; }
+    grid-template-columns: 3;
+    display: none; }
     .aboutMe_button3--prq {
       grid-row: 1;
       grid-column: 1;
@@ -239,7 +240,8 @@ body {
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 2;
-    display: none; }
+    /* Style buttons */
+    /* Darker background on mouse-over */ }
     .aboutMe_info--img {
       grid-row: 1;
       grid-column: 1; }
@@ -255,6 +257,17 @@ body {
       font-family: 'poppins';
       font-weight: 400;
       padding: 15% 15%; }
+    .aboutMe_info .btn {
+      background-color: #F50996;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 15%; }
+    .aboutMe_info .btn:hover {
+      background-color: #39EA00;
+      opacity: 0.8; }
   .aboutMe_service {
     display: grid;
     grid-template-rows: 1;
@@ -286,3 +299,39 @@ body {
     .aboutMe_service--Resp {
       grid-row: 1;
       grid-column: 4; }
+  .aboutMe_skills {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 3;
+    display: none; }
+    .aboutMe_skills img {
+      width: 100px;
+      height: 100px;
+      padding: 7% 50%; }
+    .aboutMe_skills h3 {
+      color: #39EA00;
+      font-family: 'poppins';
+      text-align: center;
+      padding-left: 23%;
+      padding-top: 2%; }
+    .aboutMe_skills--esprit:hover, .aboutMe_skills--leader:hover, .aboutMe_skills--orga:hover, .aboutMe_skills--motiv:hover, .aboutMe_skills--patience:hover, .aboutMe_skills--gestion:hover {
+      background: #F50996;
+      opacity: 0.7; }
+    .aboutMe_skills--esprit {
+      grid-row: 1;
+      grid-column: 1; }
+    .aboutMe_skills--leader {
+      grid-row: 1;
+      grid-column: 2; }
+    .aboutMe_skills--orga {
+      grid-row: 1;
+      grid-column: 3; }
+    .aboutMe_skills--motiv {
+      grid-row: 2;
+      grid-column: 1; }
+    .aboutMe_skills--patience {
+      grid-row: 2;
+      grid-column: 2; }
+    .aboutMe_skills--gestion {
+      grid-row: 2;
+      grid-column: 3; }
