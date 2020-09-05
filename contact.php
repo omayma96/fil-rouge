@@ -10,16 +10,7 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
         $subject = $_POST['subject']; 
         $email = $_POST['email'];
         $message = $_POST['message'];
-    
-        // $email_from = 'omayma.hajjami@gmail.com';
-    
-        // $email_subject = "New form submission";
-    
-        // $email_body = "User Name: $name.\n".
-        //                     "subject: $subject.\n".
-        //                         "User Email: $email.\n".
-        //                             "User Message: $message.\n";
-    
+ 
     
         $to = "omayma.hajjami@gmail.com";
     
@@ -42,18 +33,6 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
 
 }
 
-    // $name = $_POST['name'];
-    // $subject = $_POST['subject'];
-    // $mailFrom = $_POST['email'];
-    // $message = $_POST['message'];
-
-    // $mailTo = "omayma.hajjami@gmail.com";
-    // $headers = "From : " . $mailFrom;
-    // $txt = "you have received an e-mail from".$name . ".\n" . $message;
-
-
-    // mail($mailTo, $subject, $txt, $headers);
-    // header("Location: contact.php");
 
 ?>
 
@@ -69,7 +48,7 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
     
             <!-- Début pages css -->
             <link rel="stylesheet" href="css/header.css">
-            <link rel="stylesheet" href="css/footer.css">
+            <!-- <link rel="stylesheet" href="css/footer.css"> -->
             <link rel="stylesheet" href="css/contact.css">
     
     
