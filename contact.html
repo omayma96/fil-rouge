@@ -68,8 +68,8 @@
 
        </div>
        
-       <div class="contact_text_map">
-           <img src="img/maps.PNG">
+       <div class="contact_text_map" id="map">
+           
        </div>
 
    </div>
@@ -89,6 +89,19 @@
    <!--Fin menu burger-->
    
 <script type="text/javascript" src="js/burger.js"></script>
+<script>
+    function initMap(){
+        var location = {lat:33.990297 , lng:-6.736309 };
+        var map = new google.maps.Map(document.getElementById("map"),{
+            zoom: 4, 
+            center: location
+        });
+        
+    }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA32n-wNPoaTsumQUR1jFkVkpSXCBy--I&callback=initMap"
+  type="text/javascript"></script>
     
 </body>
 </html>
