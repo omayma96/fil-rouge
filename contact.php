@@ -1,3 +1,62 @@
+<?php 
+//ini_set('SMTP','smtp.menara.ma');
+$message_send = false;
+if(isset($_POST['email']) && $_POST['email'] != ''){
+
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+
+        $name = $_POST['name'];
+   
+        $subject = $_POST['subject']; 
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+    
+        // $email_from = 'omayma.hajjami@gmail.com';
+    
+        // $email_subject = "New form submission";
+    
+        // $email_body = "User Name: $name.\n".
+        //                     "subject: $subject.\n".
+        //                         "User Email: $email.\n".
+        //                             "User Message: $message.\n";
+    
+    
+        $to = "omayma.hajjami@gmail.com";
+    
+        $body = "";
+    
+        $body .= "From : ".$name. "\r\n";
+        $body .= "Email : ".$email. "\r\n";
+        $body .= "Message : ".$message. "\r\n";
+    
+       mail($to,$subject,$body);
+    
+        // header("Location: contact.php");
+
+        $message_send = true;
+    
+    }
+
+
+   
+
+}
+
+    // $name = $_POST['name'];
+    // $subject = $_POST['subject'];
+    // $mailFrom = $_POST['email'];
+    // $message = $_POST['message'];
+
+    // $mailTo = "omayma.hajjami@gmail.com";
+    // $headers = "From : " . $mailFrom;
+    // $txt = "you have received an e-mail from".$name . ".\n" . $message;
+
+
+    // mail($mailTo, $subject, $txt, $headers);
+    // header("Location: contact.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,7 +84,16 @@
         <title>Omayma Hajjami</title>
     </head>
 <body>
+<?php
+if($message_send):
+    ?>
+    <h3> Merci pour votre message </h3>
 
+<?php
+
+else : 
+
+    ?>
       <!--Navbar desktop-->
       <div class="navbar">
         <ul class="nav">
@@ -50,7 +118,7 @@
            <div class="container">
 
            <div class="contact_text_info">
-            <form class="input-fields" method="post" action="form.php">
+            <form class="input-fields" method="POST" action="">
                 <div class="name"><input type="text" name="name" placeholder="Votre nom" required/></div>
                 <div class="email"><input type="email" name="email" placeholder="Address email" required/></div>
                 <div class="subject"><input type="text" name="subject" placeholder="Sujet" required/></div>
@@ -113,6 +181,9 @@ function initMap() {
 <script defer 
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoox9ZW1j0e_zOHd33Ovta403Jg6ZWTb8&callback=initMap"></script>
 
-    
+<?php
+
+    endif;
+?>
 </body>
 </html>
