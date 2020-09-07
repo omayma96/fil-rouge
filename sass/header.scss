@@ -24,8 +24,11 @@ body{
 
 .hero_image{
     background-image: url(../img/background.png);
-    @include img(869px,center,no-repeat, cover, relative, 5%,0.98);
-    @media only screen and (max-width: 768px){
+    @include img(869px,center,no-repeat, cover, relative, 6%,0.98);
+   
+     
+    //padding: 0;
+    @media only screen and (max-width: 1000px){
         margin-left: 0%;
     }
     
@@ -33,22 +36,23 @@ body{
 
 .navbar{
     .nav{
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1000px) {
             display:none;
+            position: fixed;
         }
 
         list-style-type: none;
         margin: 0;
         padding: 0;
-        padding-top: 14%;
-        width: 5%;
+        padding-top: 12%;
+        width: 6%;
         background-color: black;
         position: fixed;
         height: 100%;
         overflow: auto;
         &_item{
             display: block;
-            padding: 15% 20px;
+            padding: 13% 20px;
             
             text-decoration: none;
             &--img{
@@ -103,7 +107,7 @@ body{
     &_reseaux{
         margin-left: -10%;
         padding-top: 4%;
-        @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 1000px){
             margin-left: -15%;
         }
     }
@@ -120,7 +124,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
 #burger{
     z-index: 6;
     position: fixed;
