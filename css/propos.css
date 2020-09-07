@@ -244,8 +244,8 @@ body {
       border: 1px solid black; }
   .aboutMe_info {
     display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-columns: 1;
     /* Style buttons */
     /* Darker background on mouse-over */ }
     .aboutMe_info--img {
@@ -256,8 +256,8 @@ body {
         width: 55%;
         padding: 5% 25%; }
     .aboutMe_info--para {
-      grid-row: 1;
-      grid-column: 2;
+      grid-row: 2;
+      grid-column: 1;
       color: white;
       text-align: center;
       font-family: 'poppins';
@@ -276,8 +276,8 @@ body {
       opacity: 0.8; }
   .aboutMe_service {
     display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 4;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
     display: none; }
     .aboutMe_service img {
       width: 27%;
