@@ -9,7 +9,8 @@ body {
   background-size: cover;
   position: relative;
   margin-left: 6%;
-  opacity: 0.98; }
+  opacity: 0.98;
+  min-height: 869px; }
   @media only screen and (max-width: 1000px) {
     .hero_image {
       margin-left: 0%; } }

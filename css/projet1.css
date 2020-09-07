@@ -9,7 +9,8 @@ body {
   background-size: cover;
   position: relative;
   margin-left: 6%;
-  opacity: 0.98; }
+  opacity: 0.98;
+  min-height: 869px; }
   @media only screen and (max-width: 1000px) {
     .hero_image {
       margin-left: 0%; } }
@@ -177,13 +178,13 @@ body {
         .projet_reseaux img {
           width: 47px;
           height: 47px; } }
-  .projet_img img {
+  .projet .slideshow-container_img1 img, .projet .slideshow-container_img2 img, .projet .slideshow-container_img3 img {
     margin-left: 17%;
     padding-top: 4%;
     width: 60%;
     height: 30%; }
     @media only screen and (max-width: 768px) {
-      .projet_img img {
+      .projet .slideshow-container_img1 img, .projet .slideshow-container_img2 img, .projet .slideshow-container_img3 img {
         width: 80%;
         height: 50%;
         margin-left: 10%; } }
@@ -210,3 +211,40 @@ body {
       @media only screen and (max-width: 768px) {
         .projet_partie1--para, .projet_partie1--list, .projet_partie2--para, .projet_partie2--list, .projet_partie3--para, .projet_partie3--list {
           font-size: 15px; } }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #39EA00;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: white; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px; } }
