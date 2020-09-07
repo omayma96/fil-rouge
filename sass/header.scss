@@ -78,6 +78,7 @@ body{
         padding-top: 35%;
         line-height: 1.8;
         padding-bottom: 10%;
+      
         @include font (white, 'poppins', 36px, bold);
         @media only screen and (max-width: 768px){
             font-size: 24px;
@@ -86,10 +87,13 @@ body{
         &--name{
             color:#F50996;
             @media only screen and (max-width: 768px){
-                font-size: 24px;
+                font-size: 24px;  
+       
         }
+    
  
-    }
+    }  
+     
 }
     &_button{
         background:none;
@@ -170,3 +174,4 @@ body{
     padding: 0;
     justify-content: space-around;
   }
+ 
