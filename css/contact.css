@@ -131,6 +131,10 @@ body {
   padding: 0;
   justify-content: space-around; }
 
+@media only screen and (min-width: 1000px) {
+  .material-icons {
+    display: none; } }
+
 .contact_image {
   background-image: url(../img/contact.jpg);
   height: 869px;

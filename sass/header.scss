@@ -174,4 +174,10 @@ body{
     padding: 0;
     justify-content: space-around;
   }
+  .material-icons{
+    @media only screen and (min-width: 1000px){
+          display: none;
+    }
+    
+  }
  
