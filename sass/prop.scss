@@ -108,11 +108,11 @@ body {
   }
  
   .wrapper .wrapper_right .item .item_info p {
-    background: #fff;
+    background: #39EA00;
     width: 150px;
     padding: 10px ;
     border-radius: 5px;
-    color: #abaacd;
+    color: white;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -160,6 +160,8 @@ body {
         color: #39EA00;
         text-align:center;
         font-family:'poppins';
+        font-size:18px;
+
         
     
       }
@@ -176,8 +178,8 @@ body {
       &--vite, &--Intui, &--Dynam, &--Resp{
         margin-left: 5%;
         img{
-          width: 35%;
-          height: 35%;
+          width: 30%;
+          height: 30%;
         margin-top: 17%;
          margin-left: 33%;
         }
@@ -185,20 +187,25 @@ body {
       &--vite{
         grid-row: 1;
         grid-column: 1;
-        margin-left: 5%;
+ 
       }
       &--Intui{
         grid-row: 1;
         grid-column: 2;
         margin-left: 5%;
+        margin-top: -5%;
+
       }
       &--Dynam{
         grid-row: 2;
         grid-column: 1;
+   
       }
       &--Resp{
         grid-row: 2;
         grid-column: 2;
+        margin-left: 5%;
+        margin-top: -2%;
       }
     
     }

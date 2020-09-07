@@ -225,11 +225,11 @@ body {
   align-items: center; }
 
 .wrapper .wrapper_right .item .item_info p {
-  background: #fff;
+  background: #39EA00;
   width: 150px;
   padding: 10px;
   border-radius: 5px;
-  color: #abaacd;
+  color: white;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -266,7 +266,8 @@ body {
   .aboutMe_service h4 {
     color: #39EA00;
     text-align: center;
-    font-family: 'poppins'; }
+    font-family: 'poppins';
+    font-size: 18px; }
   .aboutMe_service p {
     text-align: center;
     color: white;
@@ -277,21 +278,23 @@ body {
   .aboutMe_service--vite, .aboutMe_service--Intui, .aboutMe_service--Dynam, .aboutMe_service--Resp {
     margin-left: 5%; }
     .aboutMe_service--vite img, .aboutMe_service--Intui img, .aboutMe_service--Dynam img, .aboutMe_service--Resp img {
-      width: 35%;
-      height: 35%;
+      width: 30%;
+      height: 30%;
       margin-top: 17%;
       margin-left: 33%; }
   .aboutMe_service--vite {
     grid-row: 1;
-    grid-column: 1;
-    margin-left: 5%; }
+    grid-column: 1; }
   .aboutMe_service--Intui {
     grid-row: 1;
     grid-column: 2;
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin-top: -5%; }
   .aboutMe_service--Dynam {
     grid-row: 2;
     grid-column: 1; }
   .aboutMe_service--Resp {
     grid-row: 2;
-    grid-column: 2; }
+    grid-column: 2;
+    margin-left: 5%;
+    margin-top: -2%; }
