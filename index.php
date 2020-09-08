@@ -1,5 +1,5 @@
 <?php include 'lib/db.php'; ?>
-<?php include 'lib/auth.php.php'; ?>
+<?php include 'lib/auth.php'; ?>
 
 <?php
 $select = $db->query('SELECT * FROM users');
@@ -98,7 +98,7 @@ var_dump($select->fetch());
       
             </div> 
               <!--Fin menu burger-->
-              
+              <?php include 'lib/auth.php'; ?>
 <script type="text/javascript" src="js/burger.js"></script>
 
 <script type="text/javascript" src="js/typing.js"></script>
