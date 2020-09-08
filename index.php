@@ -1,6 +1,5 @@
-<?php include 'lib/constants.php'; ?>
-<?php include 'lib/db.php'; ?>
-<?php include 'lib/auth.php'; ?>
+<?php include 'lib/include.php'; ?>
+
 
 <?php
 $select = $db->query('SELECT * FROM users');
