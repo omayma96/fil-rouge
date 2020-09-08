@@ -18,6 +18,28 @@
     @media only screen and (max-width: 768px){
         margin-left: 0%;
     }
+    #myBtnContainer{
+        margin-left: 25%;
+        padding: 3%;
+        .btn {
+            border: 1px solid white;
+           border-radius: 5px;
+            padding: 12px 16px;
+            background-color: black;
+            cursor: pointer;
+            color: #F50996;
+            margin-left: 5%;
+          }
+          
+          .btn:hover {
+            background-color: #ddd;
+          }
+          
+          .btn.active {
+            background-color: #39EA00;
+            color: white;
+          }
+    }
     &_title{
 
         text-align:center;
@@ -99,3 +121,4 @@
 
     }
 }
+
