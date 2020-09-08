@@ -1,5 +1,10 @@
 <?php include 'lib/db.php'; ?>
+<?php
+$select = $db->query('SELECT * FROM users');
 
+var_dump($select->fetch());
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
