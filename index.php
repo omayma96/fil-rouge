@@ -1,6 +1,5 @@
 <?php include 'lib/db.php'; ?>
-<?php include 'lib/auth.php'; ?>
-<?php include 'lib/debug.php'; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
