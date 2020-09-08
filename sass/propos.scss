@@ -215,43 +215,6 @@ body {
       grid-template-columns: 2;
       margin-top: 3%;
 
-      @media only screen and (max-width: 1000px){
-        display : grid;
-        grid-template-rows: 6;
-        grid-template-columns: 1;
-        &--esprit{
-          grid-row: 1;
-          grid-column: 1;
-   
-        }
-        &--leader{
-          grid-row: 2;
-          grid-column: 1;
-         
-  
-        }
-        &--orga{
-          grid-row: 3;
-          grid-column: 1;
-     
-        }
-        &--motiv{
-          grid-row: 4;
-          grid-column: 1;
-         
-        }
-        &--patience{
-          grid-row: 5;
-          grid-column: 1;
-         
-        }
-        &--gestion{
-          grid-row: 6;
-          grid-column: 1;
-         
-        }
-      }
-   
       h3{
         color:#F50996;
         font-family: 'poppins';
@@ -341,6 +304,45 @@ height: 100%;
         }
         &--Resp{
           grid-row: 4;
+          grid-column: 1;
+         
+        }
+      }
+    }
+
+    .aboutMe_skills{
+      @media only screen and (max-width: 1000px){
+        display : grid;
+        grid-template-rows: 6;
+        grid-template-columns: 1;
+        &--esprit{
+          grid-row: 1;
+          grid-column: 1;
+   
+        }
+        &--leader{
+          grid-row: 2;
+          grid-column: 1;
+         
+  
+        }
+        &--orga{
+          grid-row: 3;
+          grid-column: 1;
+     
+        }
+        &--motiv{
+          grid-row: 4;
+          grid-column: 1;
+         
+        }
+        &--patience{
+          grid-row: 5;
+          grid-column: 1;
+         
+        }
+        &--gestion{
+          grid-row: 6;
           grid-column: 1;
          
         }

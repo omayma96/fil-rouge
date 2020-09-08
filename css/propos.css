@@ -304,29 +304,6 @@ body {
   grid-template-rows: 3;
   grid-template-columns: 2;
   margin-top: 3%; }
-  @media only screen and (max-width: 1000px) {
-    .aboutMe_skills {
-      display: grid;
-      grid-template-rows: 6;
-      grid-template-columns: 1; }
-      .aboutMe_skills--esprit {
-        grid-row: 1;
-        grid-column: 1; }
-      .aboutMe_skills--leader {
-        grid-row: 2;
-        grid-column: 1; }
-      .aboutMe_skills--orga {
-        grid-row: 3;
-        grid-column: 1; }
-      .aboutMe_skills--motiv {
-        grid-row: 4;
-        grid-column: 1; }
-      .aboutMe_skills--patience {
-        grid-row: 5;
-        grid-column: 1; }
-      .aboutMe_skills--gestion {
-        grid-row: 6;
-        grid-column: 1; } }
   .aboutMe_skills h3 {
     color: #F50996;
     font-family: 'poppins';
@@ -386,4 +363,27 @@ body {
           grid-column: 1; }
         .wrapper .wrapper_right .aboutMe_service--Resp {
           grid-row: 4;
+          grid-column: 1; } }
+    @media only screen and (max-width: 1000px) and (max-width: 1000px) {
+      .wrapper .wrapper_right .aboutMe_skills {
+        display: grid;
+        grid-template-rows: 6;
+        grid-template-columns: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--esprit {
+          grid-row: 1;
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--leader {
+          grid-row: 2;
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--orga {
+          grid-row: 3;
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--motiv {
+          grid-row: 4;
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--patience {
+          grid-row: 5;
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills--gestion {
+          grid-row: 6;
           grid-column: 1; } }
