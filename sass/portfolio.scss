@@ -18,6 +18,22 @@
     @media only screen and (max-width: 768px){
         margin-left: 0%;
     }
+    .column {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+      }
+
+      .show {
+        display: block;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
     #myBtnContainer{
         margin-left: 25%;
         padding: 3%;
@@ -61,11 +77,11 @@
         }
     }
     &_projets{
-        display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-        padding: 20%;
-        padding-top:  3%;
+        // display: grid;
+        // grid-template-columns: 2;
+        // grid-template-rows: 2;
+        // padding: 20%;
+        // padding-top:  3%;
         @media only screen and (max-width: 768px){
             grid-template-columns: 1;
             grid-template-rows: 4;

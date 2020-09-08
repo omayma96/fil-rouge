@@ -44,6 +44,7 @@
                     <a href="contact.html"><img class="portfolio_text_img--d" src="maquette/Asset/logo/forwardarrow_haciaadelante_4836.png"></a>
                     -->
                 <h2 class="portfolio_text_title">Projets</h2>
+                <div class="main">
                 
 <div id="myBtnContainer" >
     <button class="btn active" onclick="filterSelection('all')"> Tout</button>
@@ -52,17 +53,30 @@
     <button class="btn" onclick="filterSelection('php')"> Php</button>
     <button class="btn" onclick="filterSelection('wp')"> Wordpress</button>
   </div>
-                <div class="portfolio_text_projets">
+                <div class="portfolio_text_projets row">
 
-                    <img class="portfolio_text_projets--p1" src="maquette/Asset/projet/site houseLuxy.PNG">
-                    <img class="portfolio_text_projets--p2" src="maquette/Asset/projet/Site hypernova.PNG">
-                    <img class="portfolio_text_projets--p3" src="maquette/Asset/projet/site covid.PNG">
-                    <img class="portfolio_text_projets--p4" src="maquette/Asset/projet/site knowmaroc.PNG">
+                    <div class="column wp">
+                        <img class="portfolio_text_projets--p1" src="maquette/Asset/projet/site houseLuxy.PNG">
+                    </div>
+                    
+                    <div class="column html">
+                        <img class="portfolio_text_projets--p2" src="maquette/Asset/projet/Site hypernova.PNG">
+                    </div>
+                   
+                    <div class="column js">
+                        <img class="portfolio_text_projets--p3" src="maquette/Asset/projet/site covid.PNG">
+                    </div>
+                   
+                    <div class="column wp">
+                        <img class="portfolio_text_projets--p4" src="maquette/Asset/projet/site knowmaroc.PNG">
+
+                    </div>
             </div>
         </div>
 
 
-            <!--Début des projets -->
+    </div>
+         <!--Début des projets -->
 
 
             <!-- Fin des projets -->
@@ -81,6 +95,52 @@
             <!--Fin menu burger-->
             
 <script type="text/javascript" src="js/burger.js"></script>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+      }
+    }
+    
+    function AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
 
 </body>
 </html>
