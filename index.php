@@ -1,4 +1,6 @@
 <?php include 'lib/db.php'; ?>
+<?php include 'lib/auth.php.php'; ?>
+
 <?php
 $select = $db->query('SELECT * FROM users');
 
