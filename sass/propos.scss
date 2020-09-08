@@ -26,6 +26,8 @@ body {
     height: 680px;
     display: flex;
     border-radius: 15px;
+   
+
     
   }
   
@@ -99,6 +101,7 @@ body {
   .wrapper .wrapper_right {
     width: 550px;
     padding: 30px 50px;
+
   }
   
   
@@ -119,6 +122,7 @@ body {
     text-align: center;
     margin-left: -55%;
     margin-top: 10%;
+ 
   }
 .aboutMe{
     &_info{
@@ -128,9 +132,15 @@ body {
           color: white;
           text-align: center;
           font-family: 'poppins';
-          font-weight: 200;
+          font-weight: 400;
           padding: 20% 10% 10%;
           font-size: 20px;
+          @media only screen and (max-width: 1000px){
+            padding:   10% ;
+            font-size: 24px;
+            line-height: 1.7;
+          }
+          
         }
         /* Style buttons */
        
@@ -270,17 +280,21 @@ body {
     display : grid;
     grid-template-rows: 2;
     grid-template-columns: 1;
-width: 60%;
-height: 100%;
- 
+    width: 80%;
+    margin-left: 5%;
+    background: black;
+ margin-top: 20%;
+ //height: 160%;
+ //padding-bottom: 150%;
   .wrapper_left{
     grid-row: 1;
   grid-column: 1;
+  width: 80%;
   }
   .wrapper_right{
     grid-row: 2;
     grid-column: 1;
-
+margin-left: -15%;
     .aboutMe_service{
       @media only screen and (max-width: 1000px){
         display : grid;
@@ -306,6 +320,17 @@ height: 100%;
           grid-row: 4;
           grid-column: 1;
          
+        }
+     
+        p{
+          text-align: center;
+          color:white;
+          font-family: 'poppins';
+          font-weight: 300;
+          font-size:20px;
+          padding: 5%;
+  
+      
         }
       }
     }
@@ -345,6 +370,27 @@ height: 100%;
           grid-row: 6;
           grid-column: 1;
          
+        }
+
+        h3{
+          color:#F50996;
+          font-family: 'poppins';
+          text-align: center;
+         // margin-left: -25%;
+          font-size: 28px;
+        
+        
+        }
+    
+        &--esprit, &--leader, &--orga,  &--motiv,  &--patience,  &--gestion{
+         // margin-top : 15%;
+          img{
+            width : 100px;
+            height: 100px;
+            position: center;
+            margin-left: 40%;
+         
+          }
         }
       }
     }

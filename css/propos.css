@@ -242,9 +242,14 @@ body {
     color: white;
     text-align: center;
     font-family: 'poppins';
-    font-weight: 200;
+    font-weight: 400;
     padding: 20% 10% 10%;
     font-size: 20px; }
+    @media only screen and (max-width: 1000px) {
+      .aboutMe_info--para {
+        padding: 10%;
+        font-size: 24px;
+        line-height: 1.7; } }
   .aboutMe_info .btn {
     background-color: #39EA00;
     border: none;
@@ -339,14 +344,18 @@ body {
     display: grid;
     grid-template-rows: 2;
     grid-template-columns: 1;
-    width: 60%;
-    height: 100%; }
+    width: 80%;
+    margin-left: 5%;
+    background: black;
+    margin-top: 20%; }
     .wrapper .wrapper_left {
       grid-row: 1;
-      grid-column: 1; }
+      grid-column: 1;
+      width: 80%; }
     .wrapper .wrapper_right {
       grid-row: 2;
-      grid-column: 1; } }
+      grid-column: 1;
+      margin-left: -15%; } }
     @media only screen and (max-width: 1000px) and (max-width: 1000px) {
       .wrapper .wrapper_right .aboutMe_service {
         display: grid;
@@ -363,7 +372,14 @@ body {
           grid-column: 1; }
         .wrapper .wrapper_right .aboutMe_service--Resp {
           grid-row: 4;
-          grid-column: 1; } }
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_service p {
+          text-align: center;
+          color: white;
+          font-family: 'poppins';
+          font-weight: 300;
+          font-size: 20px;
+          padding: 5%; } }
     @media only screen and (max-width: 1000px) and (max-width: 1000px) {
       .wrapper .wrapper_right .aboutMe_skills {
         display: grid;
@@ -386,4 +402,14 @@ body {
           grid-column: 1; }
         .wrapper .wrapper_right .aboutMe_skills--gestion {
           grid-row: 6;
-          grid-column: 1; } }
+          grid-column: 1; }
+        .wrapper .wrapper_right .aboutMe_skills h3 {
+          color: #F50996;
+          font-family: 'poppins';
+          text-align: center;
+          font-size: 28px; }
+        .wrapper .wrapper_right .aboutMe_skills--esprit img, .wrapper .wrapper_right .aboutMe_skills--leader img, .wrapper .wrapper_right .aboutMe_skills--orga img, .wrapper .wrapper_right .aboutMe_skills--motiv img, .wrapper .wrapper_right .aboutMe_skills--patience img, .wrapper .wrapper_right .aboutMe_skills--gestion img {
+          width: 100px;
+          height: 100px;
+          position: center;
+          margin-left: 40%; } }
