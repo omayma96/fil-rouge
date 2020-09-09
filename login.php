@@ -1,5 +1,5 @@
-<?php include 'lib/db.php'; ?>
 
+<?php include 'process.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +49,7 @@
         <!--Fin Navbar desktop -->
        
        
-        <form>
+        <form action="#" method="POST">
             <div class="svgContainer">
                 <div>
                     <svg class="mySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
@@ -159,23 +159,23 @@
             
             <div class="inputGroup inputGroup1">
                 <label for="loginEmail" id="loginEmailLabel">Email</label>
-                <input type="email" id="loginEmail" maxlength="254" />
+                <input type="email" id="loginEmail" name="email"  maxlength="254" />
                 <p class="helper helper1"></p>
             </div>
             <div class="inputGroup inputGroup2">
                 <label for="loginPassword" id="loginPasswordLabel">mot de passe</label>
-                <input type="password" id="loginPassword" />
+                <input type="password" id="loginPassword" name="password" />
                 <label id="showPasswordToggle" for="showPasswordCheck">voir
                     <input id="showPasswordCheck" type="checkbox"/>
                     <div class="indicator"></div>
                 </label>
             </div>
             <div class="inputGroup inputGroup3">
-                <button id="login">connexion</button>
+                <button id="login" name="admin">se connecter</button>
             </div>	
         </form>
 
-        
+       
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
 </body>

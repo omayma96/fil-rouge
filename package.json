@@ -4,6 +4,8 @@
   "description": "mon portfolio",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^4.5.2",
+    "popper.js": "^1.16.1",
     "postcss-cli": "^7.1.1"
   },
   "devDependencies": {
