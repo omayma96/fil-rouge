@@ -1,5 +1,5 @@
 
-<?php include 'process.php' ?>
+<?php include 'log_admin.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
