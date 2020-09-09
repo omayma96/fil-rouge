@@ -6,10 +6,10 @@ if(isset($_POST['admin'])){
    $email = htmlspecialchars($_POST['email']) ;
    $pass = htmlspecialchars($_POST['password']);
     $query = $db->query("SELECT * FROM users WHERE email='$email' AND password='$pass' ");
-        if($query->rowCount() > 0){
+        if($query){
                 
                 $_SESSION['email']=$email;
-                    header("location: ./Dashboard");
+                    header("location: Dashboard.php");
                     exit();
                 
             

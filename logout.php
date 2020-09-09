@@ -2,9 +2,8 @@
 session_start();
 if($_SESSION['email']){
     session_destroy();
-    header("location: ./login");
+    header("location: login.php");
 }
-
 
 
 ?>
