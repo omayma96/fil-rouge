@@ -1,128 +1,147 @@
-<?php
-include('db.php');
+<?php include('./include/db.php'); 
+
 ?>
-
-<h2>Edit Portfolio </h2>
-         <?php
-         if(isset($_GET['msg'])){
-             
-  if($_GET['msg']=='updated'){
-      ?>
-      <div class="alert alert-success text-center" role="alert">
- le projet est ajouté avec succès!
-</div>
-      <?php
-  }  
-  if($_GET['msg']=='error'){
-      ?>
-      <div class="alert alert-danger text-center" role="alert">
- ERROR!!! il y'a quelque chose qui marche pas , vérifie la taille de l'image ou le type!
-</div>
-      <?php
-  } } 
-?>  
-         <form method="post" action="upportfolio.php" enctype="multipart/form-data">
-  <div class="form-row">
-  <div class="form-group col-md-6">
-  <label>images de projet (Minimum 600px X 600px, Maxsize 2mb)</label>
-  <div class="custom-file">
-    <input type="file" name="projectpic" class="custom-file-input" id="profilepic">
-    <label class="custom-file-label" for="projectpic">choisir...</label>
-  </div></div>
-  
-   <div class="form-group col-md-6 mt-auto">
-      <label for="name">nom de projet</label>
-      <input type="name" name="projectname" class="form-control" id="name" placeholder="Nom">
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+            <!--icon de site-->
+            <link rel="icon" type="image/png" href="img/profil.png"/>
+            <!-- fin icon-->
+    
+            <!-- Début pages css -->
+            <link rel="stylesheet" href="css/header.css">
    
+            <link rel="stylesheet" href="css/portfolio.css">
+            
     
-    <div class="form-group col-md-12">
-      <label for="email">lien de projet</label>
-      <input type="text" name="projectlink" class="form-control" id="email" placeholder="https://github.com/omayma96">
-    </div>
-    <div class="form-group col-md-2 ml-auto">
-        <input type="submit" name="addtoportfolio" class="btn btn-primary" value="ajouter au portfolio">
-    </div>
-  
-</form>
-<table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Project Image</th>
-              <th>Project Name</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-         <?php
-$query2="SELECT * FROM portfolio ";
+    
+            <!-- Fin pages css-->
+    
+            <!--Début FONT -->
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-$queryrun2=mysqli_query($db,$query2);
+            <!--Fin FONT -->
+    
+        <title>Omayma Hajjami</title>
+    </head>
+<body>         
+        
 
-$count=1;         
-while($data2=mysqli_fetch_array($queryrun2)){
+        
+
+            <!--Navbar desktop-->
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a class="nav_item" href="index.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-niche-pour-chien-50.png" alt="accueil" ></a></li>
+                    <li><a class="nav_item" href="propos.html"><img class="nav_item--img" src="maquette/Asset/logo/icons8-compétences-de-développement-30.png" alt="compétences"></a></li>
+                    <li><a class="nav_item" href="portfolioo.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-visible-60.png" alt="portfolio"></a></li>
+                    <li><a class="nav_item" href="contact.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-contact-d'affaires-50.png" alt="contact"></a></li>
+                    <li><a class="nav_item" href="login.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-personne-femme-50.png" alt="login"></a></li>
+                </ul>
+            </div>
+            <!--Fin Navbar desktop -->
+            <div class="portfolio_text"> 
+       
+      
+                    <!-- <a href="propos.html"><img class="portfolio_text_img--g" src="maquette/Asset/logo/back_arrow_5821.png"></a>
+                    <a href="contact.html"><img class="portfolio_text_img--d" src="maquette/Asset/logo/forwardarrow_haciaadelante_4836.png"></a>
+                    -->
+                <!-- <h2 class="portfolio_text_title">Projets</h2>
+                <div class="main">
+                
+<div id="myBtnContainer" >
+    <button class="btn active" onclick="filterSelection('all')"> Tout</button>
+    <button class="btn" onclick="filterSelection('html')"> Html/css </button>
+    <button class="btn" onclick="filterSelection('js')"> Javascript</button>
+    <button class="btn" onclick="filterSelection('php')"> Php</button>
+    <button class="btn" onclick="filterSelection('wp')"> Wordpress</button>
+  </div>
+                <div class="portfolio_text_projets row">
+
+                    <div class="column wp">
+                        <img class="portfolio_text_projets--p1" src="maquette/Asset/projet/site houseLuxy.PNG">
+                    </div>
+                    
+                    <div class="column html">
+                        <a href="projet1.html"><img class="portfolio_text_projets--p2" src="maquette/Asset/projet/Site hypernova.PNG"></a>
+                    </div>
+                   
+                    <div class="column js">
+                        <img class="portfolio_text_projets--p3" src="maquette/Asset/projet/site covid.PNG">
+                    </div>
+                   
+                    <div class="column wp">
+                        <img class="portfolio_text_projets--p4" src="maquette/Asset/projet/site knowmaroc.PNG">
+
+                    </div>
+            </div>
+        </div> -->
+        <section id="portfolio" class="portfolio ">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                </div>
+
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                   <?php
+                    $query5 = "SELECT * FROM portfolio";
+$runquery5= mysqli_query($db,$query5);
+while($data5=mysqli_fetch_array($runquery5)){
     ?>
-     <tr>
-         <div class="modal fade" id="modal<?=$data2['id']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h6 class="modal-title" id="exampleModalLabel">Modifier le Portfolio</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <form method="post" action="upportfolio.php" enctype="multipart/form-data">
-          <input type="hidden" name="id" value="<?=$data2['id']?>">
-  <div class="form-row">
-  <div class="form-group col-md-12">
-      <img src="../assets/img/<?=$data2['projectpic']?>" class="oo img-thumbnail">
-  </div>
-  <div class="form-group col-md-6">
-  <label>Project Screenshot/Image (Minimum 600px X 600px, Maxsize 2mb)</label>
-  <div class="custom-file">
-    <input type="file" name="projectpic" class="custom-file-input" id="profilepic">
-    <label class="custom-file-label" for="projectpic">Choose Pic...</label>
-  </div></div>
-  
-   <div class="form-group col-md-6 mt-auto">
-      <label for="name">Project Name</label>
-      <input type="name" name="projectname" value="<?=$data2['projectname']?>" class="form-control" id="name" placeholder="ToDo List Maker">
-    </div>
-    
-   
-    
-    <div class="form-group col-md-12">
-      <label for="email">Project Link</label>
-      <input type="text" name="projectlink" value="<?=$data2['projectlink']?>" class="form-control" id="email" placeholder="https://whomonugiri.github.io/todo-list-maker/">
-    </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="img/<?=$data5['projectpic']?>" class="img-fluid" alt="">
+                            <div class="portfolio-links" title="<?=$data5['projectname']?>">
+                                
+                                <a href="img/<?=$data5['projectpic']?>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="<?=$data5['projectlink']?>" target="_blank" title="Visit <?=$data5['projectname']?>"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                                <?php
+}
+                    ?>
+                    
 
-      </div>
-      
-      
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input type="submit" class="btn btn-primary" name="pupdate" value="Update">
-          </form>
-      </div>
+                    
+                       
+
+                </div>
+
+            </div>
+        </section>
+
     </div>
-  </div>
-</div>   
-          <td>#<?=$count?></td>
-              <td><img src="../assets/img/<?=$data2['projectpic']?>" class="oo img-thumbnail"></td>
-         <td><?=$data2['projectname']?></td>
-         <td>
-             <a href="<?=$data2['projectlink']?>"> <button type="button" class="btn btn-success btn-sm">Visit</button></a>
-         
-         <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal<?=$data2['id']?>">
-  Edit
-</button> <a href="upportfolio.php?del=<?=$data2['id']?>"><button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModal">
-  Delete
-             </button></a></td>
-            </tr>            
-         <?php $count++;
-} ?>
-             </tbody></table>  
+         <!--Début des projets -->
+
+
+            <!-- Fin des projets -->
+
+            <i id="burger" class="material-icons" onclick="burger()">menu</i>
+            <i id="quit" class="material-icons" onclick="quit()">fermer</i>
+            
+              <div id="links">
+                   <a href="index.html">Home</a>
+                   <a href="propos.html">A propos de moi</a>
+                   <a href="portfolio.html">Portfolio</a>
+                   <a href="contact.html">Contact</a>
+              </div>
+    
+              
+            <!--Fin menu burger-->
+            
+            
+<script type="text/javascript" src="js/burger.js"></script>
+<script type="text/javascript" src="js/filtrer.js"></script>
+
+
+</body>
+</html>

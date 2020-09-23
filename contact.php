@@ -97,11 +97,11 @@ else :
            <div class="container">
 
            <div class="contact_text_info">
-            <form class="input-fields" method="POST" action="">
-                <div class="name"><input type="text" name="name" placeholder="Votre nom" required/></div>
-                <div class="email"><input type="email" name="email" placeholder="Address email" required/></div>
-                <div class="subject"><input type="text" name="subject" placeholder="Sujet" required/></div>
-                <div class="message"><textarea name="message" placeholder="Description de votre projet … Merci de détailler le plus possible votre besoin" required></textarea></div>
+            <form class="input-fields" method="POST" action="include/message.php">
+                <div class="name"><input type="text" id="name" name="name" placeholder="Votre nom" required/></div>
+                <div class="email"><input type="email" id="email" name="email" placeholder="Address email" required/></div>
+                <div class="subject"><input type="text" id="subject" name="subject" placeholder="Sujet" required/></div>
+                <div class="message"><textarea id="message"  name="message" placeholder="Description de votre projet … Merci de détailler le plus possible votre besoin" required></textarea></div>
                 <div class="submit"><input type="submit" class="contact-button" value="ENVOYER VOTRE MESSAGE" required/> </div>
             </form>
         

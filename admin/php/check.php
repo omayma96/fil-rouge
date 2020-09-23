@@ -1,15 +1,19 @@
+
+
+
 <?php 
 session_start();
-include 'include/db.php';
+include("../../include/db.php");
 $er="";
 if(isset($_POST['admin'])){
    $email = htmlspecialchars($_POST['email']) ;
-   $pass = htmlspecialchars($_POST['password']);
-    $query = $db->query("SELECT * FROM users WHERE email='$email' AND password='$pass' ");
+   $password = htmlspecialchars($_POST['password']);
+    $query = $db->query("SELECT * FROM admin_users WHERE email='$email' AND password='$password' ");
         if($query){
                 
                 $_SESSION['email']=$email;
-                    header("location: admin/index.php");
+                    // header("location: admin/index.php");
+                    header('location: /admin/index.php');
                     exit();
                 
             
@@ -22,4 +26,3 @@ if(isset($_POST['admin'])){
   
 ?>  
   
-
