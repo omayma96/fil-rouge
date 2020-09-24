@@ -1,5 +1,5 @@
 @import 'header.scss';
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 @mixin pos($ht,$w,$pl,$pt,$p){
@@ -9,108 +9,167 @@
     padding-top: $pt;
     position: $p;
 }
+
+// .navbar{
+//   .nav{
+//       @media only screen and (max-width: 1000px) {
+//           display:none;
+//           position: fixed;
+//       }
+
+//       list-style-type: none;
+//       margin-left: -0.93%;
+//       padding: 0;
+//       padding-top: 15%;
+//       width: 6%;
+//       background-color: black;
+//       //position: fixed;
+//       //height: 100%;
+//       //overflow: auto;
+//       &_item{
+//           display: block;
+//           padding: 5% 20px;
+          
+//           text-decoration: none;
+//           &--img{
+//               height: 45px;
+//               width: 45px;
+//           }
+//       }
+//   }
+// }
+
+.navbar1{
+  .nav1{
+      @media only screen and (max-width: 1000px) {
+          display:none;
+          position: fixed;
+      }
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 12%;
+      width: 6%;
+      background-color: black;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      &_item{
+          display: block;
+          padding: 13% 20px;
+          
+          text-decoration: none;
+          &--img{
+              height: 45px;
+              width: 45px;
+          }
+      }
+  }
+}
 .portfolio_text{
-    margin-left: 5%;
+    margin-left: 6%;
     padding:1px 16px;
     min-height:870px;
     background-color: black;
     opacity: 0.86;
+    height: 100%;
+
+
+  position: relative;
+;
+  font-family: "Open Sans";
     @media only screen and (max-width: 768px){
         margin-left: 0%;
     }
-    .column {
-        float: left;
-        width: 33.33%;
-        display: none; /* Hide all elements by default */
+    // .column {
+    //     float: left;
+    //     width: 33.33%;
+    //     display: none; /* Hide all elements by default */
 
-        @media only screen and (max-width: 768px){
-            width: 70%;
-            margin-left: 10%;
-        }
-      }
+    //     @media only screen and (max-width: 768px){
+    //         width: 70%;
+    //         margin-left: 10%;
+    //     }
+    //   }
 
-      .show {
-        display: block;
-      }
+    //   .show {
+    //     display: block;
+    //   }
 
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+    //   .row:after {
+    //     content: "";
+    //     display: table;
+    //     clear: both;
+    //   }
       
-    #myBtnContainer{
-        margin-left: 25%;
-        padding: 3%;
-        @media only screen and (max-width: 768px){
-            margin-left: 7%;
-        }
-        .btn {
-            border: 1px solid white;
-           border-radius: 5px;
-            padding: 12px 16px;
-            background-color: black;
-            cursor: pointer;
-            color: #F50996;
-            margin-left: 5%;
-          }
+    // #myBtnContainer{
+    //     margin-left: 25%;
+    //     padding: 3%;
+    //     @media only screen and (max-width: 768px){
+    //         margin-left: 7%;
+    //     }
+    //     .btn {
+    //         border: 1px solid white;
+    //        border-radius: 5px;
+    //         padding: 12px 16px;
+    //         background-color: black;
+    //         cursor: pointer;
+    //         color: #F50996;
+    //         margin-left: 5%;
+    //       }
           
-          .btn:hover {
-            background-color: #ddd;
-          }
+    //       .btn:hover {
+    //         background-color: #ddd;
+    //       }
           
-          .btn.active {
-            background-color: #39EA00;
-            color: white;
-          }
-    }
+    //       .btn.active {
+    //         background-color: #39EA00;
+    //         color: white;
+    //       }
+    // }
     &_title{
 
         text-align:center;
+        padding-bottom: 3%;
+        padding-top: 2%;
         @include font (#F50996, 'poppins', 36px, bold);
         @media only screen and (max-width: 768px){
             font-size: 28px;
         }
 
     }
-    &_img{
-        
-        opacity: 0.5;
-        &--g{
-            @include pos(55px,55px,8%,28%, absolute);
-        }
-        &--d{
-            @include pos(55px,55px,82%,27%, absolute);
-
-        }
-    }
-    &_projets{
+ 
+  
+    // &_projets{
      
         
-        &--p1,&--p2,&--p3,&--p4{
-         height: 250px;
-        width: 400px;
-        padding: 8%;
-        padding-bottom: 15%;
-        margin-left: 5%;
-        @media only screen and (max-width: 768px){
+    //     &--p1,&--p2,&--p3,&--p4{
+    //      height: 250px;
+    //     width: 400px;
+    //     padding: 8%;
+    //     padding-bottom: 15%;
+    //     margin-left: 5%;
+    //     @media only screen and (max-width: 768px){
        
-            padding: 4%;
-            padding-bottom: 8%;
-            height: 250px;
-            width: 100%;
-        }
-        }
+    //         padding: 4%;
+    //         padding-bottom: 8%;
+    //         height: 250px;
+    //         width: 100%;
+    //     }
+    //     }
 
 
-    }
+    // }
+   
     .portfolio .portfolio-item {
         margin-bottom: 30px;
+        
       }
       
       .portfolio #portfolio-flters {
         padding: 0;
-        margin: 0 auto 35px auto;
+        //margin: 0 auto 35px auto;
         list-style: none;
         text-align: center;
         background: #fff;
@@ -132,7 +191,7 @@
       }
       
       .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-        color: #149ddd;
+        color: #39EA00;
       }
       
       .portfolio #portfolio-flters li:last-child {
@@ -175,13 +234,13 @@
         color: #fff;
         font-size: 28px;
         text-align: center;
-        background: rgba(20, 157, 221, 0.75);
+        background: #39EA00;
         transition: 0.3s;
         width: 50%;
       }
       
       .portfolio .portfolio-wrap .portfolio-links a:hover {
-        background: rgba(20, 157, 221, 0.95);
+        background: #39EA00;
       }
       
       .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -200,6 +259,12 @@
         opacity: 1;
         bottom: 0;
       }
-    
+      #wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
 }
+
 

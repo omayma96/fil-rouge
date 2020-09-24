@@ -84,7 +84,7 @@ while($data2=mysqli_fetch_array($queryrun2)){
   
    <div class="form-group col-md-6 mt-auto">
       <label for="name">Nom du projet</label>
-      <input type="name" name="projectname" value="<?=$data2['projectname']?>" class="form-control" id="name" placeholder="ToDo List Maker">
+      <input type="name" name="projectname" value="<?=$data2['projectname']?>" class="form-control" id="name" placeholder="projet">
     </div>
     
    
@@ -106,7 +106,7 @@ while($data2=mysqli_fetch_array($queryrun2)){
   </div>
 </div>   
           <td>#<?=$count?></td>
-              <td><img src="../assets/img/<?=$data2['projectpic']?>" class="oo img-thumbnail"></td>
+              <td><img src="../img/<?=$data2['projectpic']?>" class="oo img-thumbnail"></td>
          <td><?=$data2['projectname']?></td>
          <td>
              <a href="<?=$data2['projectlink']?>"> <button type="button" class="btn btn-success btn-sm">Visiter</button></a>

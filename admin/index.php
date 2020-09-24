@@ -108,16 +108,11 @@ $data=mysqli_fetch_array($queryrun);
 <?php
      if(isset($_GET['edithome'])){ 
      include('php/home.php'); //home
-     }else if(isset($_GET['editabout'])){
-         include('php/about.php');      
-     }else if(isset($_GET['editresume'])){
-       include('php/resume.php');
-     }else if(isset($_GET['editportfolio'])){
+     }
+     else if(isset($_GET['editportfolio'])){
       include('php/portfolio.php');
-     }else if(isset($_GET['editseo'])){
-         include('php/seo.php');
-    
-     }else if(isset($_GET['editprofile'])){ ?>
+     }
+     else if(isset($_GET['editprofile'])){ ?>
         <h2>Editer le Profile</h2>
     <?php
          if(isset($_GET['msg'])){
@@ -125,7 +120,7 @@ $data=mysqli_fetch_array($queryrun);
   if($_GET['msg']=='updated'){
       ?>
       <div class="alert alert-success text-center" role="alert">
-  Successfully Updated !
+      Mise à jour réussie!
 </div>
       <?php
   }  
@@ -139,11 +134,11 @@ $data=mysqli_fetch_array($queryrun);
   </div>
         <div class="form-group col-md-6">
     <label for="psubtitle">Mot de passe</label>
-    <input type="text" name="userpass" value="<?=$data['password']?>" class="form-control" id="psubtitle" placeholder="*************">
+    <input type="text" name="password" value="<?=$data['password']?>" class="form-control" id="psubtitle" placeholder="*************">
   </div>
         <div class="form-group col-md-12">
     <label for="psubtitle">Email</label>
-    <input type="text" name="userid" value="<?=$data['email'] ?>" class="form-control" id="psubtitle" placeholder="admin@admin.com">
+    <input type="text" name="email" value="<?=$data['email'] ?>" class="form-control" id="psubtitle" placeholder="admin@admin.com">
   </div>
          </div>
          <input type="submit" name="uprofile" class="btn btn-primary" value="Save Changes">

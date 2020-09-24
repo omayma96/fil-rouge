@@ -9,5 +9,5 @@ $query="INSERT INTO contact (cname,cemail,csubject,cmessage) ";
 $query.="VALUES('$name','$email','$subject','$message')";
 $run = mysqli_query($db,$query);
 if($run){
-    echo 'Your message has been sent. Thank you!';
+    echo 'votre message est arrivé avec succès, Merci !';
 }

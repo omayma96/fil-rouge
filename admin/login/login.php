@@ -35,9 +35,9 @@ if(isset($_SESSION['username'])){
   <div class="navbar">
             <ul class="nav">
                 <li><a class="nav_item" href="/index.php"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-niche-pour-chien-50.png" alt="accueil" ></a></li>
-                <li><a class="nav_item" href="propos.html"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-compétences-de-développement-30.png" alt="compétences"></a></li>
-                <li><a class="nav_item" href="portfolioo.html"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-visible-60.png" alt="portfolio"></a></li>
-                <li><a class="nav_item" href="contact.php"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-contact-d'affaires-50.png" alt="contact"></a></li>
+                <li><a class="nav_item" href="/propos.html"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-compétences-de-développement-30.png" alt="compétences"></a></li>
+                <li><a class="nav_item" href="/portfolio.php"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-visible-60.png" alt="portfolio"></a></li>
+                <li><a class="nav_item" href="/contact.php"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-contact-d'affaires-50.png" alt="contact"></a></li>
                 <li><a class="nav_item" href="index.php"><img class="nav_item--img" src="/maquette/Asset/logo/icons8-personne-femme-50.png" alt="login"></a></li>
             </ul>
         </div>
