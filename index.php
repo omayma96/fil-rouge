@@ -13,9 +13,6 @@
         <!-- Début pages css -->
         <link rel="stylesheet" href="css/header.css">
 
-
-
-
         <!-- Fin pages css-->
 
         <!--Début FONT -->
@@ -30,15 +27,10 @@
 <body>
 
     
-    <!--Début Header-->
+    <!--=======================================Début Header============================================--->
    
-             <!--Background-->
-             
-                <!-- <img class="background" src="img/background.png" alt="background"> -->
-    
-            <!--Fin Background -->
 
-        <!--Navbar desktop-->
+        <!--===================================Navbar desktop==========================================-->
         <div class="navbar">
             <ul class="nav">
                 <li><a class="nav_item" href="index.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-niche-pour-chien-50.png" alt="accueil" ></a></li>
@@ -48,35 +40,34 @@
                 <li><a class="nav_item" href="admin/login/login.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-personne-femme-50.png" alt="login"></a></li>
             </ul>
         </div>
-        <!--Fin Navbar desktop -->
+        <!--==================================Fin Navbar desktop -======================================-->
 
 
 
-    <!-- Début du text-->
-    <div class="hero_image">
+    <!-- =====================================Début du text==============================================-->
+        <div class="hero_image">
 
-         <div class="hero_text">
+             <div class="hero_text">
            
-            <h2 class="hero_text_title">Je suis <strong class="hero_text_title--name" id="text"></strong><br>une développeuse web Full Stack</h2>
-            <a class="hero_text_button" href="contact.php">Contactez moi</a> 
-            <!-- <a href="propos.html"><img class="hero_text_img" src="maquette/Asset/logo/forwardarrow_haciaadelante_4836.png"></a> -->
-            <ul class="hero_text_reseaux">
-                <il><a  class="hero_text_reseaux--icon" href="https://www.facebook.com/omaymahajjami1"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-facebook-48.png"></a></il>
-                <il><a  class="hero_text_reseaux--icon" href="https://www.instagram.com/omaymahajjami/"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-instagram-24.png"></a></il>
-                <il><a  class="hero_text_reseaux--icon" href="https://www.linkedin.com/in/omayma-hajjami-a57a8217a/"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-linkedin-24.png"></a></il>
-                <il><a  class="hero_text_reseaux--icon" href="https://github.com/omayma96"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-github-2-24.png"></a></il>
-                <il><a  class="hero_text_reseaux--icon" href="https://twitter.com/HajjamiOmayma"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-twitter-24.png"></a></il>
+                    <h2 class="hero_text_title">Je suis <strong class="hero_text_title--name" id="text"></strong><br>une développeuse web Full Stack</h2>
+                    <a class="hero_text_button" href="contact.php">Contactez moi</a> 
 
-
-            </ul>
-        </div> 
+                    <ul class="hero_text_reseaux">
+                        <il><a  class="hero_text_reseaux--icon" href="https://www.facebook.com/omaymahajjami1"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-facebook-48.png"></a></il>
+                        <il><a  class="hero_text_reseaux--icon" href="https://www.instagram.com/omaymahajjami/"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-instagram-24.png"></a></il>
+                        <il><a  class="hero_text_reseaux--icon" href="https://www.linkedin.com/in/omayma-hajjami-a57a8217a/"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-linkedin-24.png"></a></il>
+                        <il><a  class="hero_text_reseaux--icon" href="https://github.com/omayma96"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-github-2-24.png"></a></il>
+                        <il><a  class="hero_text_reseaux--icon" href="https://twitter.com/HajjamiOmayma"><img class="hero_text_reseaux--icon" src="maquette/Asset/logo/icons8-twitter-24.png"></a></il>
+                    </ul>
+            </div> 
   
-    <!--Fin du text -->
+    <!--========================================Fin du text===================================================-->
 
 
 
-      <!-- Fin Header-->
-              <!--Menu burger-->
+      <!--=============================================== Fin Header=======================================--->
+
+              <!-- ======================================Menu burger=======================================-->
 
               <i id="burger" class="material-icons" onclick="burger()">menu</i>
               <i id="quit" class="material-icons" onclick="quit()">fermer</i>
@@ -89,10 +80,10 @@
                 </div>
       
             </div> 
-              <!--Fin menu burger-->
+              <!-- ======================================Fin menu burger=====================================-->
               
-<script type="text/javascript" src="js/burger.js"></script>
 
+<script type="text/javascript" src="js/burger.js"></script>
 <script type="text/javascript" src="js/typing.js"></script>
 
     
