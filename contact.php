@@ -1,5 +1,5 @@
 <?php 
-//ini_set('SMTP','smtp.menara.ma');
+
 $message_send = false;
 if(isset($_POST['email']) && $_POST['email'] != ''){
 
@@ -26,10 +26,7 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
 
         $message_send = true;
     
-    }
-
-
-   
+    } 
 
 }
 
@@ -62,18 +59,18 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
     
         <title>Omayma Hajjami</title>
     </head>
-<body>
-<?php
-if($message_send):
-    ?>
-    <h3> Merci pour votre message </h3>
+    <body>
+        <?php
+            if($message_send):
+        ?>
+            <h3> Merci pour votre message </h3>
 
-<?php
+        <?php
 
-else : 
+        else : 
 
-    ?>
-      <!--Navbar desktop-->
+        ?>
+      <!--===============================================Navbar desktop==================================================-->
       <div class="navbar">
             <ul class="nav">
                 <li><a class="nav_item" href="index.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-niche-pour-chien-50.png" alt="accueil" ></a></li>
@@ -83,7 +80,7 @@ else :
                 <li><a class="nav_item" href="admin/login/login.php"><img class="nav_item--img" src="maquette/Asset/logo/icons8-personne-femme-50.png" alt="login"></a></li>
             </ul>
         </div>
-    <!--Fin Navbar desktop -->
+      <!--==================================================Fin Navbar desktop========================================= -->
 
        <!-- Début du text-->
        <div class="contact_image">
@@ -93,9 +90,9 @@ else :
            <h2 class="contact_text_title">Contact</h2>
            
            <p class="contact_text_para">UNE IDéE ? UN PROJET ? N'HéSITEZ PAS à ME CONTACTER</p>
-           <!-- <a href="propos.html"><img class="contact_text_img" src="maquette/Asset/logo/forwardarrow_haciaadelante_4836.png"></a> -->
            <div class="container">
 
+    <!--==================================================formulaire de contact ========================================= -->
            <div class="contact_text_info">
             <form class="input-fields" method="POST" action="include/message.php">
                 <div class="name"><input type="text" id="name" name="name" placeholder="Votre nom" required/></div>
@@ -121,7 +118,6 @@ else :
 
    </div>
    <!--Fin du text -->
-
    <i id="burger" class="material-icons" onclick="burger()">menu</i>
    <i id="quit" class="material-icons" onclick="quit()">fermer</i>
    
@@ -131,7 +127,6 @@ else :
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
      </div>
-
 
    <!--Fin menu burger-->
    
