@@ -1,6 +1,6 @@
    
    
-   <h2>Boite des message </h2>
+   <h2>Boite des messages </h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
